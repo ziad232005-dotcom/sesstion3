@@ -6,28 +6,40 @@ namespace sesstion3
     {
         static void Main(string[] args)
         {
-            // // 1. String Immutability and ToUpper()
+            #region Question 1
+            // 1. String Immutability and ToUpper()
             string name1;
             name1 = "clean code";
             name1 = name1.ToUpper();
 
             Console.WriteLine($"Upper title: {name1}");
+            #endregion
+
+            #region Question 2
 
             //2.referance
             string name2;
             name2 = "CleanCode";
-
             Console.WriteLine(object.ReferenceEquals(name1, name2));
+            #endregion
+
+            #region Question 3
+
             //3.StringBuilder ->Append
             StringBuilder sb = new StringBuilder();
             sb.Append("Book List");
             sb.Append(" - Updated");
             Console.WriteLine(sb.ToString());
+            #endregion
+
+            #region Question 4
 
             //4.StringBuilder ->replace
             sb.Replace("Book List", "Library");
             Console.WriteLine(sb.ToString());
+            #endregion
 
+            #region Question 5
             // 5. String Concatenation using +
             StringBuilder cd = new StringBuilder();
             string student01 = "CleanCode";
@@ -35,12 +47,19 @@ namespace sesstion3
             string route = "pages : " + page + " Book :" + student01;
             Console.WriteLine(route);
 
+            #endregion
+
+            #region Question 6
+
             // 6. String Concatenation using $
             Console.WriteLine($"pages: {page},Book :{student01}");
+            #endregion
+            #region Question 7
 
             // 7. String Concatenation using string.format()
             string student1 = string.Format("Book :{0},pages :{1}", student01, page);
-            Console.WriteLine(student1);
+            Console.WriteLine(student1); 
+            #endregion
 
             // 8. If / Else Statement
 
