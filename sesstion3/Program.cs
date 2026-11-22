@@ -19,15 +19,18 @@ namespace sesstion3
 
             //2.referance
             string name2;
-            name2 = "CleanCode"; 
+            name2 = "CleanCode";
+            Console.WriteLine(object.ReferenceEquals(name1, name2));
             #endregion
 
-            Console.WriteLine(object.ReferenceEquals(name1, name2));
+            #region Question 3
+
             //3.StringBuilder ->Append
             StringBuilder sb = new StringBuilder();
             sb.Append("Book List");
             sb.Append(" - Updated");
-            Console.WriteLine(sb.ToString());
+            Console.WriteLine(sb.ToString()); 
+            #endregion
 
             //4.StringBuilder ->replace
             sb.Replace("Book List", "Library");
