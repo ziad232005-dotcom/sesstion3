@@ -6,12 +6,14 @@ namespace sesstion3
     {
         static void Main(string[] args)
         {
-            // // 1. String Immutability and ToUpper()
+            #region Question 1
+            // 1. String Immutability and ToUpper()
             string name1;
             name1 = "clean code";
             name1 = name1.ToUpper();
 
-            Console.WriteLine($"Upper title: {name1}");
+            Console.WriteLine($"Upper title: {name1}"); 
+            #endregion
 
             //2.referance
             string name2;
