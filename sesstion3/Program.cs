@@ -54,12 +54,15 @@ namespace sesstion3
             // 6. String Concatenation using $
             Console.WriteLine($"pages: {page},Book :{student01}");
             #endregion
+
             #region Question 7
 
             // 7. String Concatenation using string.format()
             string student1 = string.Format("Book :{0},pages :{1}", student01, page);
-            Console.WriteLine(student1); 
+            Console.WriteLine(student1);
             #endregion
+
+            #region Question 8
 
             // 8. If / Else Statement
 
@@ -72,86 +75,18 @@ namespace sesstion3
             {
                 Console.WriteLine("short Book");
             }
+            #endregion
 
+            #region Question 9
+            // 9. AND Operator (&&)
             bool isAvailable = true;
 
             if (pages > 300 && isAvailable == true)
             {
                 Console.WriteLine("you can borrow this book");
             }
+            #endregion
 
-            String title = "Refactoring";
-            switch (title)
-            {
-                case "Clean code":
-                    Console.WriteLine("Great choice!");
-                    break;
-
-                case "Refactoring":
-                    Console.WriteLine("Nicen pick!");
-                    break;
-
-                default:
-                    Console.WriteLine("Never heard of it");
-                    break;
-            }
-
-
-
-            string sizeLabel = pages > 300 ? "Long Book" : "Short Book";
-
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-
-            for (int i = 0; i < books.Length; i++)
-            {
-                Console.WriteLine($"{i + 1}. {books[i]}");
-            }
-            int index = 0;
-            while (index < books.Length)
-            {
-                Console.WriteLine(books[index]);
-                index++;
-            }
-
-            do
-            {
-                Console.WriteLine("Checking book...");
-                index++;
-            }
-            while (index < 3);
-
-            foreach (string book in books)
-            {
-                Console.WriteLine(book);
-            }
-
-            foreach (string book in books)
-            {
-                if (book == "Refactoring")
-                {
-                    break;
-                }
-
-                Console.WriteLine(book);
-            }
-            foreach (string book in books)
-            {
-                if (book == "Refactoring")
-                {
-                    continue;
-                }
-
-                Console.WriteLine(book);
-            }
-            static void PrintFirstBook(string[] books)
-            {
-                if (books.Length == 0)
-                {
-                    return;
-                }
-
-                Console.WriteLine(books[0]);
-            }
         }
     }
 }
