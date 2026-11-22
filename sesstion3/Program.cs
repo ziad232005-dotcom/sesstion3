@@ -54,12 +54,15 @@ namespace sesstion3
             // 6. String Concatenation using $
             Console.WriteLine($"pages: {page},Book :{student01}");
             #endregion
+
             #region Question 7
 
             // 7. String Concatenation using string.format()
             string student1 = string.Format("Book :{0},pages :{1}", student01, page);
-            Console.WriteLine(student1); 
+            Console.WriteLine(student1);
             #endregion
+
+            #region Question 8
 
             // 8. If / Else Statement
 
@@ -72,13 +75,21 @@ namespace sesstion3
             {
                 Console.WriteLine("short Book");
             }
+            #endregion
 
+            #region Question 9
+            // 9. AND Operator (&&)
             bool isAvailable = true;
 
             if (pages > 300 && isAvailable == true)
             {
                 Console.WriteLine("you can borrow this book");
             }
+            #endregion
+
+            #region Question 10
+
+            // 10. Switch Statement
 
             String title = "Refactoring";
             switch (title)
@@ -95,10 +106,18 @@ namespace sesstion3
                     Console.WriteLine("Never heard of it");
                     break;
             }
+            #endregion
 
 
+            #region Question 11
+            // 11. Ternary Operator
 
             string sizeLabel = pages > 300 ? "Long Book" : "Short Book";
+            Console.WriteLine(sizeLabel);
+            #endregion
+
+            #region Question 12
+            // 12. For Loop
 
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
@@ -106,12 +125,22 @@ namespace sesstion3
             {
                 Console.WriteLine($"{i + 1}. {books[i]}");
             }
+            #endregion
+
+            #region Question 13
+
+            // 13. While Loop
+
             int index = 0;
             while (index < books.Length)
             {
                 Console.WriteLine(books[index]);
                 index++;
             }
+            #endregion
+
+            #region Question 14
+            // 14. Do-While Loop (Exactly 3 Times)
 
             do
             {
@@ -120,10 +149,18 @@ namespace sesstion3
             }
             while (index < 3);
 
+            #endregion
+
+            #region Question 15
+            // 15. Foreach Loop
             foreach (string book in books)
             {
                 Console.WriteLine(book);
             }
+            #endregion
+
+            #region Question 16
+            // 16. Break Statement
 
             foreach (string book in books)
             {
@@ -134,6 +171,11 @@ namespace sesstion3
 
                 Console.WriteLine(book);
             }
+            #endregion
+
+            #region Question 17
+            // 17. Continue Statement
+
             foreach (string book in books)
             {
                 if (book == "Refactoring")
@@ -143,6 +185,12 @@ namespace sesstion3
 
                 Console.WriteLine(book);
             }
+            #endregion
+
+            #region Question 18
+            // 18. Method with Return
+
+            PrintFirstBook(books);
             static void PrintFirstBook(string[] books)
             {
                 if (books.Length == 0)
@@ -151,7 +199,8 @@ namespace sesstion3
                 }
 
                 Console.WriteLine(books[0]);
-            }
+            } 
+            #endregion
         }
     }
 }
