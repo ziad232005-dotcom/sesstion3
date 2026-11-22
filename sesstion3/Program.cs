@@ -52,12 +52,14 @@ namespace sesstion3
             #region Question 6
 
             // 6. String Concatenation using $
-            Console.WriteLine($"pages: {page},Book :{student01}"); 
+            Console.WriteLine($"pages: {page},Book :{student01}");
             #endregion
+            #region Question 7
 
             // 7. String Concatenation using string.format()
             string student1 = string.Format("Book :{0},pages :{1}", student01, page);
-            Console.WriteLine(student1);
+            Console.WriteLine(student1); 
+            #endregion
 
             // 8. If / Else Statement
 
