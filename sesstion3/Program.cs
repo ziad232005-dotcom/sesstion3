@@ -29,12 +29,15 @@ namespace sesstion3
             StringBuilder sb = new StringBuilder();
             sb.Append("Book List");
             sb.Append(" - Updated");
-            Console.WriteLine(sb.ToString()); 
+            Console.WriteLine(sb.ToString());
             #endregion
+
+            #region Question 4
 
             //4.StringBuilder ->replace
             sb.Replace("Book List", "Library");
-            Console.WriteLine(sb.ToString());
+            Console.WriteLine(sb.ToString()); 
+            #endregion
 
             // 5. String Concatenation using +
             StringBuilder cd = new StringBuilder();
