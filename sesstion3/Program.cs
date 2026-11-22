@@ -49,8 +49,11 @@ namespace sesstion3
 
             #endregion
 
+            #region Question 6
+
             // 6. String Concatenation using $
-            Console.WriteLine($"pages: {page},Book :{student01}");
+            Console.WriteLine($"pages: {page},Book :{student01}"); 
+            #endregion
 
             // 7. String Concatenation using string.format()
             string student1 = string.Format("Book :{0},pages :{1}", student01, page);
