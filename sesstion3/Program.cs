@@ -36,15 +36,18 @@ namespace sesstion3
 
             //4.StringBuilder ->replace
             sb.Replace("Book List", "Library");
-            Console.WriteLine(sb.ToString()); 
+            Console.WriteLine(sb.ToString());
             #endregion
 
+            #region Question 5
             // 5. String Concatenation using +
             StringBuilder cd = new StringBuilder();
             string student01 = "CleanCode";
             int page = 464;
             string route = "pages : " + page + " Book :" + student01;
             Console.WriteLine(route);
+
+            #endregion
 
             // 6. String Concatenation using $
             Console.WriteLine($"pages: {page},Book :{student01}");
