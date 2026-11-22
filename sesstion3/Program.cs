@@ -12,12 +12,15 @@ namespace sesstion3
             name1 = "clean code";
             name1 = name1.ToUpper();
 
-            Console.WriteLine($"Upper title: {name1}"); 
+            Console.WriteLine($"Upper title: {name1}");
             #endregion
+
+            #region Question 2
 
             //2.referance
             string name2;
-            name2 = "CleanCode";
+            name2 = "CleanCode"; 
+            #endregion
 
             Console.WriteLine(object.ReferenceEquals(name1, name2));
             //3.StringBuilder ->Append
